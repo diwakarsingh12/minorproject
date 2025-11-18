@@ -1,0 +1,365 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(135deg, #00b4d8, #0077b6, #023e8a);
+  color: white;
+  overflow: hidden;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 180px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  transition: background 0.3s;
+}
+
+.sidebar:hover {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.home-icon {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.home-icon:hover {
+  color: #caf0f8;
+  transform: scale(1.2);
+}
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #90e0ef;
+  transform: translateX(5px);
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.main-content h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  .main-content {
+    padding-top: 60px;
+  }
+}
+
+/* DOCTOR */
+
+/* ===== DOCTOR PAGE ===== */
+.doctor-body {
+  background: linear-gradient(135deg, #48cae4, #0096c7, #0077b6);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+.doctor-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  width: 80%;
+  max-width: 800px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Improve spacing and layout for patient form */
+.form-section {
+  display: flex;
+  flex-direction: column;  /* Stack vertically */
+  gap: 15px;               /* Add spacing between fields */
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin: 20px auto;       /* Center form horizontally */
+}
+
+.form-section input,
+.form-section button {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-section button {
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-section button:hover {
+  background-color: #005fa3;
+}
+
+
+
+  /* patients*/
+
+  /* ===== PATIENT PAGE ===== */
+.patient-body {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+.patient-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  width: 80%;
+  max-width: 800px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.patient-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.patient-body input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+.patient-body button {
+  background-color: #c9184a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.patient-body button:hover {
+  background-color: #a4133c;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  color: #a4133c;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #a4133c;
+  color: white;
+}
+
+tr:hover {
+  background-color: #ffe5ec;
+}
+
+
+/* ===== Delete Button Style ===== */
+.delete-btn {
+  background-color: #d00000;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #9d0208;
+}
+
+
+/* Home Page Styling */
+.home-body {
+  background-color: #f0f8ff;
+  font-family: Arial, sans-serif;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  min-height: 80vh;
+}
+
+.section-box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.section-box h2 {
+  margin-bottom: 10px;
+  color: #0078d7;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0078d7;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #005fa3;
+}
+.search-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.search-section input {
+  padding: 10px;
+  width: 250px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-section button {
+  padding: 10px 20px;
+  border: none;
+  background: #008cba;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result-card {
+  margin-top: 20px;
+  background:#f5f5f5;
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: left;
+  color: #333;
+}
+
+
+.back-btn {
+  display: inline-block;
+  background-color: #0078d7;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.back-btn:hover {
+  background-color: #005fa3;
+}
+
+
+/* ===== HOME PAGE TITLE ===== */
+.nav-title {
+  font-size: 1.5rem;      /* make it 3.5rem or 4rem for larger */
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+

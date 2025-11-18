@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patients - Healthcare Management System</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="patient-body">
+  
+  <a href="index.html" class="back-btn">← Back to Home</a>
+  <div class="patient-container">
+    <h1>🏥 Patient Management</h1>
+    ...
+
+  <div class="patient-container">
+    <h1>🏥 Patient Management</h1>
+
+    <!-- Patient Input Form -->
+    <div class="form-section">
+      <input type="text" id="patientName" placeholder="Patient Name" />
+      <input type="number" id="age" placeholder="Age" />
+      <input type="text" id="disease" placeholder="Disease" />
+      <select id="assignedDoctor">
+        <option value="">Select Doctor</option>
+      </select>
+      <button id="addPatientBtn">Add Patient</button>
+    </div>
+
+    <!-- Table -->
+    <table id="patientTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Disease</th>
+          <th>Doctor</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="assets/js/patients.js"></script>
+</body>
+</html>
